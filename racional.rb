@@ -1,6 +1,7 @@
 # Implementar en este fichero la clase para crear objetos racionales
 
-require "./gcd.rb"
+require "gcd"
+require "lcm"
 
 class Fraction
    attr_reader :x, :y
@@ -27,7 +28,7 @@ class Fraction
   #suma de fracciones
   def suma(other)
     
-    den = lcm(@y, other.y)  #denominador comun 
+    den=lcm(@y, other.y)  #denominador comun 
 
     x1 = (den/@y)*@x
     x2 = (den/other.y)*other.x

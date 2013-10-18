@@ -12,8 +12,7 @@ class TestFraction < Test::Unit::TestCase
      # nothing
   end
   
-  def test_simple
-     
+  def test_simple 
     assert_equal("2/7", @f1.to_s)
     assert_equal("4/9", (@f2).to_s)
     assert_equal("46/63", @f1.suma(@f2).to_s)
