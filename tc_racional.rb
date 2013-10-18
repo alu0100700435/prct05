@@ -27,6 +27,8 @@ class TestFraction < Test::Unit::TestCase
     assert_raise(RuntimeError){Fraction.new("a","a")}    
   end
    
-
+  def test_failure    
+    assert_equal("0/0",@f1.suma(@f2).to_s)    
+  end
   
 end
