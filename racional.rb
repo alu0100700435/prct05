@@ -17,4 +17,11 @@ class Fraccion
     end                
   end
   
+  #Método que muestra en string
+  def to_s
+    
+    "#{@x}/#{@y}"
+    
+  end
+  
 end
