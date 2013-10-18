@@ -23,6 +23,10 @@ class TestFraction < Test::Unit::TestCase
     
    end
    
+  def test_typecheck
+    assert_raise(RuntimeError){Fraction.new("a","a")}    
+  end
    
+
   
 end
