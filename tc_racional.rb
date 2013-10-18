@@ -1,4 +1,4 @@
-require "./racional.rb"
+require "racional"
 require "test/unit"
 
 class TestFraction < Test::Unit::TestCase
