@@ -2,7 +2,7 @@
 
 require "./gcd.rb"
 
-class Fraccion
+class Fraction
    attr_reader :x, :y
 
   # Metodo que llama al contructor, que generara una excepcion si el denominador es 0
@@ -61,6 +61,5 @@ class Fraccion
     Fraction.new(@x*other.y, @y*other.x)
     
   end
-
   
 end
