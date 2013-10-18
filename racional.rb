@@ -36,4 +36,16 @@ class Fraccion
     
   end
   
+  # resta de fracciones
+  def resta(other)
+    
+    den = lcm(@y, other.y)
+
+    x1 =(den/@y)*@x
+    x2 = (den/other.y)*other.x
+
+    Fraction.new(x1-x2, den)
+    
+  end
+  
 end
