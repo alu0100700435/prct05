@@ -48,4 +48,19 @@ class Fraccion
     
   end
   
+  # Producto de fracciones
+  def multiplicacion(other)
+    
+    Fraction.new(@x*other.x, @y*other.y)
+    
+  end
+
+  # Division de fracciones
+  def division(other)
+    
+    Fraction.new(@x*other.y, @y*other.x)
+    
+  end
+
+  
 end
